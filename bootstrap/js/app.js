@@ -84,7 +84,7 @@ let endedIds = [0];
 
 async function loadSchedule() {
     try {
-        const response = await fetch('events.json');
+        const response = await fetch('./events.json');
         const events = await response.json();
         render(events);
     } catch (error) {
@@ -129,7 +129,7 @@ let lbLiveIds = [];
 
 async function loadLeaderboard() {
     try {
-        const response = await fetch('leaderboard.json');
+        const response = await fetch('./leaderboard.json');
         const teams = await response.json();
         renderLeaderboard(teams);
     } catch (error) {
@@ -199,7 +199,7 @@ let elbTotal = 0;
 
 async function loadEventLeaderboard() {
     try {
-        const response = await fetch('event-leaderboard.json');
+        const response = await fetch('./event-leaderboard.json');
         const events = await response.json();
         renderEventLeaderboard(events);
     } catch (error) {
