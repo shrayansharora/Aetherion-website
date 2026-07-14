@@ -77,7 +77,7 @@ carousels.forEach(carousel => {
 
 //event logic
 
-let liveIds = [1];
+let liveIds = [0];
 let nextIds = [0];
 let endedIds = [0];
 
